@@ -12,7 +12,7 @@ pipeline {
         stage('Run Artisan Command config clear') {
             steps {
                 script {
-                    bat 'cd /d E:\\HocWeb\\PHP\\"Bài Tập PHP"\\DemoLaravelJenkins && php artisan config:clear'
+                    bat 'php artisan config:clear'
                 }
             }
         }
