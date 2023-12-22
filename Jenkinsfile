@@ -9,6 +9,12 @@ pipeline {
                 }
             }
         }
-        // Add other stages as needed...
+        stage('Setting the variables values hello world') {
+            steps {
+                 sh '''#!/bin/bash
+                         echo "hello world"
+                 '''
+            }
+        }
     }
 }
