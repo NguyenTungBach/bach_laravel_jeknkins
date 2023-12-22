@@ -12,7 +12,7 @@ pipeline {
         stage('Run Artisan Command config clear') {
             steps {
                 script {
-                    bat 'php artisan config:clear'
+                    bat 'composer update && php artisan config:clear'
                 }
             }
         }
