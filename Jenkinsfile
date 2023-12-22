@@ -9,12 +9,13 @@ pipeline {
                 }
             }
         }
-        stage('Setting the variables values hello world') {
+        stage('Run Artisan Command config clear') {
             steps {
-                 sh '''#!/bin/bash
-                         echo "hello world"
-                 '''
+                script {
+                    bat 'cd /d E:\\HocWeb\\PHP\\"Bài Tập PHP"\\DemoLaravelJenkins && php artisan config:clear'
+                }
             }
         }
+
     }
 }
